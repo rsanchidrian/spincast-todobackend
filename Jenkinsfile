@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               echo 'Run tests here...'
+               sh 'java -jar /var/jenkins_home/workspace/todobackend-java/spincast-todobackend-inmemory-1.0.2.jar'
             }
         }
     }
