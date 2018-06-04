@@ -23,5 +23,10 @@ pipeline {
                 }
             }
         }
+        stage('Deploy') {
+            steps {
+               echo 'Run tests here...'
+            }
+        }
     }
 }
